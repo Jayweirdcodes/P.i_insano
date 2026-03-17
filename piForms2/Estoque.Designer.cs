@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            label1 = new Label();
             panel2 = new Panel();
             label2 = new Label();
-            label1 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -44,6 +44,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 780);
             panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 26.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(38, 44);
+            label1.Name = "label1";
+            label1.Size = new Size(118, 41);
+            label1.TabIndex = 2;
+            label1.Text = "STILO";
             // 
             // panel2
             // 
@@ -65,22 +76,15 @@
             label2.TabIndex = 0;
             label2.Text = "Estoque";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(73, 52);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 2;
-            label1.Text = "label1";
-            // 
             // Estoque
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.SeaShell;
             ClientSize = new Size(1351, 780);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Estoque";
             Text = "Estoque";
             panel1.ResumeLayout(false);
