@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
+            label1 = new Label();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -38,8 +39,6 @@
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
-            panel2 = new Panel();
-            label1 = new Label();
             panel3 = new Panel();
             label2 = new Label();
             pictureBox1 = new PictureBox();
@@ -48,7 +47,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel2.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -57,6 +55,7 @@
             // 
             panel1.BackColor = Color.FromArgb(64, 64, 64);
             panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(pictureBox4);
             panel1.Controls.Add(pictureBox3);
@@ -65,15 +64,26 @@
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
-            panel1.Location = new Point(0, 126);
+            panel1.Location = new Point(0, -4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(197, 651);
+            panel1.Size = new Size(197, 781);
             panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 26.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(35, 50);
+            label1.Name = "label1";
+            label1.Size = new Size(118, 41);
+            label1.TabIndex = 0;
+            label1.Text = "STILO";
             // 
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(10, 526);
+            pictureBox5.Location = new Point(8, 655);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(35, 35);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -83,7 +93,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(10, 240);
+            pictureBox4.Location = new Point(8, 369);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(29, 29);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -94,7 +104,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(10, 382);
+            pictureBox3.Location = new Point(8, 511);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(41, 39);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -104,7 +114,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.Caixa;
-            pictureBox2.Location = new Point(11, 95);
+            pictureBox2.Location = new Point(9, 224);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(34, 37);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -117,9 +127,10 @@
             button4.BackgroundImageLayout = ImageLayout.Zoom;
             button4.FlatStyle = FlatStyle.Popup;
             button4.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.Location = new Point(0, 509);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(-2, 638);
             button4.Name = "button4";
-            button4.Size = new Size(195, 66);
+            button4.Size = new Size(197, 66);
             button4.TabIndex = 3;
             button4.Text = "     Configurações";
             button4.UseVisualStyleBackColor = false;
@@ -129,7 +140,8 @@
             button3.BackColor = Color.FromArgb(64, 64, 64);
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(-2, 368);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(-4, 497);
             button3.Name = "button3";
             button3.Size = new Size(197, 66);
             button3.TabIndex = 2;
@@ -141,7 +153,8 @@
             button2.BackColor = Color.FromArgb(64, 64, 64);
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(-2, 222);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(-4, 351);
             button2.Name = "button2";
             button2.Size = new Size(197, 66);
             button2.TabIndex = 1;
@@ -153,33 +166,15 @@
             button1.BackColor = Color.FromArgb(64, 64, 64);
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
             button1.ImageAlign = ContentAlignment.TopLeft;
-            button1.Location = new Point(0, 81);
+            button1.Location = new Point(-2, 210);
             button1.Name = "button1";
             button1.Size = new Size(197, 66);
             button1.TabIndex = 0;
             button1.Text = "Estoque";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.FromArgb(64, 64, 64);
-            panel2.Controls.Add(label1);
-            panel2.Location = new Point(0, -4);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(197, 132);
-            panel2.TabIndex = 1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Times New Roman", 21.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(47, 43);
-            label1.Name = "label1";
-            label1.Size = new Size(99, 33);
-            label1.TabIndex = 0;
-            label1.Text = "STILO";
             // 
             // panel3
             // 
@@ -195,6 +190,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Times New Roman", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
             label2.Location = new Point(490, 30);
             label2.Name = "label2";
             label2.Size = new Size(181, 73);
@@ -216,22 +212,20 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(255, 255, 192);
+            BackColor = Color.SeaShell;
             ClientSize = new Size(1347, 776);
             Controls.Add(pictureBox1);
             Controls.Add(panel3);
-            Controls.Add(panel2);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.Fixed3D;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             Text = "Home da Pizzaria";
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -241,7 +235,6 @@
         #endregion
 
         private Panel panel1;
-        private Panel panel2;
         private Panel panel3;
         private Button button3;
         private Button button2;
