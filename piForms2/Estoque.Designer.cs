@@ -41,12 +41,14 @@
             btnSair_Estoque = new Button();
             panel2 = new Panel();
             label2 = new Label();
+            dataGridView1 = new DataGridView();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -116,7 +118,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(8, 364);
+            pictureBox4.Location = new Point(8, 366);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(35, 34);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -126,7 +128,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(8, 514);
+            pictureBox3.Location = new Point(8, 513);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(35, 36);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -185,13 +187,21 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Times New Roman", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Impact", 48F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
             label2.Location = new Point(440, 31);
             label2.Name = "label2";
-            label2.Size = new Size(238, 73);
+            label2.Size = new Size(243, 80);
             label2.TabIndex = 0;
             label2.Text = "Estoque";
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(235, 163);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(1072, 577);
+            dataGridView1.TabIndex = 2;
             // 
             // Estoque
             // 
@@ -199,6 +209,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SeaShell;
             ClientSize = new Size(1347, 776);
+            Controls.Add(dataGridView1);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -213,6 +224,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -230,5 +242,6 @@
         private Button btnPedidos_Estoque;
         private Button btnEmFalta_Estoque;
         private Button btnEstoque_Estoque;
+        private DataGridView dataGridView1;
     }
 }
