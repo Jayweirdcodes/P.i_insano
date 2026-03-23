@@ -21,5 +21,10 @@ namespace piForms2
         {
 
         }
+
+        private void btnSair_Estoque_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
