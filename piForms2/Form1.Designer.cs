@@ -64,9 +64,9 @@
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
-            panel1.Location = new Point(0, -4);
+            panel1.Location = new Point(-3, -4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(197, 781);
+            panel1.Size = new Size(200, 783);
             panel1.TabIndex = 0;
             // 
             // label1
@@ -82,8 +82,9 @@
             // 
             // pictureBox5
             // 
+            pictureBox5.BackColor = Color.White;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(8, 655);
+            pictureBox5.Location = new Point(8, 654);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(35, 35);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -92,10 +93,11 @@
             // 
             // pictureBox4
             // 
+            pictureBox4.BackColor = Color.White;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(8, 369);
+            pictureBox4.Location = new Point(8, 364);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(29, 29);
+            pictureBox4.Size = new Size(35, 34);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 5;
             pictureBox4.TabStop = false;
@@ -104,9 +106,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(8, 511);
+            pictureBox3.Location = new Point(8, 514);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(41, 39);
+            pictureBox3.Size = new Size(35, 36);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 4;
             pictureBox3.TabStop = false;
@@ -132,8 +134,9 @@
             button4.Name = "button4";
             button4.Size = new Size(197, 66);
             button4.TabIndex = 3;
-            button4.Text = "     Configurações";
+            button4.Text = "Sair";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -179,11 +182,10 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(192, 0, 0);
-            panel3.BorderStyle = BorderStyle.Fixed3D;
             panel3.Controls.Add(label2);
-            panel3.Location = new Point(194, -4);
+            panel3.Location = new Point(195, -4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1154, 132);
+            panel3.Size = new Size(1159, 132);
             panel3.TabIndex = 1;
             // 
             // label2
@@ -214,8 +216,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SeaShell;
             ClientSize = new Size(1347, 776);
-            Controls.Add(pictureBox1);
             Controls.Add(panel3);
+            Controls.Add(pictureBox1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
