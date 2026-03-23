@@ -93,6 +93,16 @@ namespace piForms2.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap peza {
+            get {
+                object obj = ResourceManager.GetObject("peza", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap piza1 {
             get {
                 object obj = ResourceManager.GetObject("piza1", resourceCulture);
