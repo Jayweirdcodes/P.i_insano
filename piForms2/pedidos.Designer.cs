@@ -64,10 +64,10 @@
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
-            panel1.Location = new Point(-2, -4);
+            panel1.Location = new Point(-3, -4);
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 783);
-            panel1.TabIndex = 1;
+            panel1.TabIndex = 0;
             // 
             // label1
             // 
@@ -180,10 +180,10 @@
             // 
             panel3.BackColor = Color.FromArgb(192, 0, 0);
             panel3.Controls.Add(label2);
-            panel3.Location = new Point(196, -4);
+            panel3.Location = new Point(195, -4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1160, 132);
-            panel3.TabIndex = 2;
+            panel3.Size = new Size(1159, 132);
+            panel3.TabIndex = 1;
             // 
             // label2
             // 
