@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace piForms2
 {
-    public partial class Estoque : Form
+    public partial class pedidos : Form
     {
-        public Estoque()
+        public pedidos()
         {
             InitializeComponent();
-        }
-
-        private void Estoque_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

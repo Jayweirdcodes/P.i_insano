@@ -1,14 +1,14 @@
 ﻿namespace piForms2
 {
-    partial class Form1
+    partial class pedidos
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,12 +23,12 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pedidos));
             panel1 = new Panel();
             label1 = new Label();
             pictureBox5 = new PictureBox();
@@ -41,14 +41,14 @@
             button1 = new Button();
             panel3 = new Panel();
             label2 = new Label();
-            pictureBox1 = new PictureBox();
+            dataGridView1 = new DataGridView();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -64,10 +64,10 @@
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
-            panel1.Location = new Point(-3, -4);
+            panel1.Location = new Point(-2, -4);
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 783);
-            panel1.TabIndex = 0;
+            panel1.TabIndex = 1;
             // 
             // label1
             // 
@@ -101,7 +101,6 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 5;
             pictureBox4.TabStop = false;
-            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox3
             // 
@@ -134,9 +133,8 @@
             button4.Name = "button4";
             button4.Size = new Size(197, 66);
             button4.TabIndex = 3;
-            button4.Text = "Sair";
+            button4.Text = "Voltar";
             button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -177,51 +175,47 @@
             button1.TabIndex = 0;
             button1.Text = "Estoque";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(192, 0, 0);
             panel3.Controls.Add(label2);
-            panel3.Location = new Point(195, -4);
+            panel3.Location = new Point(196, -4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1159, 132);
-            panel3.TabIndex = 1;
+            panel3.Size = new Size(1160, 132);
+            panel3.TabIndex = 2;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Times New Roman", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(490, 30);
+            label2.Location = new Point(443, 27);
             label2.Name = "label2";
-            label2.Size = new Size(181, 73);
+            label2.Size = new Size(235, 73);
             label2.TabIndex = 0;
-            label2.Text = "Menu";
+            label2.Text = "Pedidos";
             // 
-            // pictureBox1
+            // dataGridView1
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(409, 161);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(734, 567);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(395, 156);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(774, 559);
+            dataGridView1.TabIndex = 3;
             // 
-            // Form1
+            // pedidos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SeaShell;
             ClientSize = new Size(1347, 776);
+            Controls.Add(dataGridView1);
             Controls.Add(panel3);
-            Controls.Add(pictureBox1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
-            Text = "Home da Pizzaria";
+            Name = "pedidos";
+            Text = "pedidos";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -230,24 +224,24 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
-        private Panel panel3;
+        private Label label1;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private Button button4;
         private Button button3;
         private Button button2;
         private Button button1;
-        private Label label1;
+        private Panel panel3;
         private Label label2;
-        private Button button4;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox1;
+        private DataGridView dataGridView1;
     }
 }
