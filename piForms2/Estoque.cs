@@ -16,5 +16,10 @@ namespace piForms2
         {
             InitializeComponent();
         }
+
+        private void Estoque_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
